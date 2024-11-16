@@ -19,12 +19,9 @@ export const Contact = (props) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(name, email, message);
-    
-    {/* replace below with your own Service ID, Template ID and Public Key from your EmailJS account */ }
-    
+    console.log(name, email, message);    
     emailjs
-      .sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", e.target, "YOUR_PUBLIC_KEY")
+      .sendForm("service_thedebuggers", "template_suzkl8b", e.target, "2bKfoZKQ7Dfh56nat")
       .then(
         (result) => {
           console.log(result.text);
