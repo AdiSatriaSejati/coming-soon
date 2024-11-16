@@ -1,0 +1,115 @@
+{
+  "Header": {
+  },
+  "About": {
+    "paragraph": "The Debugger is a team or company that provides various services in the field of digital technology, specializing in the development and design of digital products. Their primary focus is to assist businesses and individuals in creating effective, innovative, and user-friendly technological solutions.",
+    "Why": [
+      "Experienced and Professional Team",
+      "Focus on Client Needs",
+      "Modern and Functional Design",
+      "Transparent Process"
+    ],
+    "Why2": [
+      "Prototypes for Initial Validation",
+      "Reliable Technology Solutions",
+      "After-Service Support"    
+    ]
+  },
+  "Gallery": [
+    {
+      "title": "Movie Landing Page",
+      "largeImage": "https://www.sketchappsources.com/resources/source-image/movie-landing-page-in_kam.png",
+      "smallImage": "https://www.sketchappsources.com/resources/source-image/movie-landing-page-in_kam.png"
+    },
+    {
+      "title": "Smart Home Landing Page",
+      "largeImage": "https://www.sketchappsources.com/resources/source-image/siphome-landing-page-agensip.png",
+      "smallImage": "https://www.sketchappsources.com/resources/source-image/siphome-landing-page-agensip.png"
+    },
+    {
+      "title": "Simple Dashboard in Light & Dark",
+      "largeImage": "https://www.sketchappsources.com/resources/source-image/recreate-vivid-dashboard.png",
+      "smallImage": "https://www.sketchappsources.com/resources/source-image/recreate-vivid-dashboard.png"
+    },
+    {
+      "title": "Everest Sales Dashboard",
+      "largeImage": "https://www.sketchappsources.com/resources/source-image/everest-sales-dashboard-swati-soni.png",
+      "smallImage": "https://www.sketchappsources.com/resources/source-image/everest-sales-dashboard-swati-soni.png"
+    },
+    {
+      "title": "E-commerce UI Kit",
+      "largeImage": "https://www.sketchappsources.com/resources/source-image/ecommerce-ui-kit-vosidiy.png",
+      "smallImage": "https://www.sketchappsources.com/resources/source-image/ecommerce-ui-kit-vosidiy.png"
+    },
+    {
+      "title": "E-commerce User Dashboard",
+      "largeImage": "https://www.sketchappsources.com/resources/source-image/e-comerce-user-dashboard-crevatif.png",
+      "smallImage": "https://www.sketchappsources.com/resources/source-image/e-comerce-user-dashboard-crevatif.png"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "https://camo.githubusercontent.com/8934c364cf43c5ee503e03637de6aa56fc937cb14a1bc0ec81e547b1702ca706/68747470733a2f2f636f726575692e696f2f696d616765732f74656d706c617465732f636f726575695f70726f5f64656661756c745f6c696768745f6461726b2e77656270",
+      "smallImage": "https://camo.githubusercontent.com/8934c364cf43c5ee503e03637de6aa56fc937cb14a1bc0ec81e547b1702ca706/68747470733a2f2f636f726575692e696f2f696d616765732f74656d706c617465732f636f726575695f70726f5f64656661756c745f6c696768745f6461726b2e77656270"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/08-large.jpg",
+      "smallImage": "img/portfolio/08-small.jpg"
+    },
+    {
+      "title": "Project Title",
+      "largeImage": "img/portfolio/09-large.jpg",
+      "smallImage": "img/portfolio/09-small.jpg"
+    }
+  ],
+  "Services": [
+    {
+      "icon": "fa fa-pencil-square-o",
+      "name": "UI/UX Design",
+      "text": "Delivering engaging user experiences through intuitive interface designs."
+    },
+    {
+      "icon": "fa fa-globe",
+      "name": "Web & Mobile Design",
+      "text": "Developing aesthetic and responsive web and mobile designs."
+    },
+    {
+      "icon": "fa fa-desktop",
+      "name": "Landing Page",
+      "text": "Creating landing pages designed to increase conversion rates."
+    },
+    {
+      "icon": "fa fa-code",
+      "name": "Development",
+      "text": "Offering software and application development tailored to business needs."
+    }
+  ],
+  "Team": [
+    {
+      "name": "ARYA DILLAH",
+      "category": "UI & UX Designer",
+      "link":"https://aryadillah.vercel.app/",
+      "img": "img/team/arya.jpg"
+    },
+    {
+      "name": "ADI SATRIA SEJATI",
+      "category": "Full-Stack Developer",
+      "link":"https://adisatriasejati.vercel.app/",
+      "img": "https://ik.imagekit.io/AdiSatriaSejati/Aing.jpg?updatedAt=1729184207940"
+    },
+    {
+      "name": "FEBRIAN SITORUS",
+      "category": "Front-End Developer",
+      "img": "img/team/febri.jpg"
+    },
+    {
+      "name": "M. TAUFIQ RENDRADI",
+      "category": "Back-End Developer",
+      "img": "img/team/taufiq.jpg"
+    }
+  ],
+  "Contact": {
+    "phone": "+62 896 4735 2044",
+    "email": "thedebuggerss@gmail.com"
+  }
+}

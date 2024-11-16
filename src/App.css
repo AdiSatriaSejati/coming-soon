@@ -1,0 +1,64 @@
+@media (max-width: 570px) {/* Semua handphone */
+  #features {
+    padding: 20px;
+    width: 100%;
+  }
+  #about,
+  #services,
+  #testimonials,
+  #team,
+  #contact,
+  #footer {
+    width: 100%;
+  }
+
+  #portfolio {
+    width: 100%;
+  }
+  .intro h1 {
+    font-size: 5.3vw;
+  }
+  .intro h1 span {
+    font-weight: 800;
+  }
+  header .first {
+    font-size: 5vw;
+  }
+  .intro .two {
+    font-size: 4vw;
+    width: 100%;
+    margin-left: 0;
+    padding-top: 30px;
+    line-height: 20px;
+  }
+  header .intro-text {
+    padding-top: 350px;
+    bottom: 60vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {/* untuk tab / ipad */
+  header .intro-text {
+    padding-top: 350px;
+  }
+  .intro h1 {
+    font-size: 5.8vw;
+  }
+  header .first {
+    font-size: 5vw;
+  }
+  #menu img {
+    width: 20vw;
+    height: 6.5vw;
+  }
+  .intro .two {
+    font-size: 4vw;
+    width: 100%;
+    margin-left: 0;
+    line-height: 30px;
+  }
+  #about {
+    padding: 170px 0;
+  }
+}
+

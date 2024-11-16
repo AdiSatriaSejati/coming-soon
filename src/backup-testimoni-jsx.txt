@@ -1,0 +1,1 @@
+      <Testimonials data={landingPageData.Testimonials} />
