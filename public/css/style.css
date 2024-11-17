@@ -158,7 +158,7 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #000;
+  color: #fff;
   background-color: #5ca9fb;
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
   padding: 14px 34px;
@@ -448,7 +448,9 @@ header .first {
 }
 /* Contact Section */
 #contact {
-  padding: 100px 0 60px;
+  position: relative;
+  padding: auto;
+  top: 150px;
   color: rgba(0, 0, 0, 0.75);
 }
 #contact .section-title {
@@ -490,11 +492,11 @@ header .first {
 #contact .btn-custom {
   margin: 30px 0;
   background: transparent;
-  border: 2px solid #000;
+  border: 2px solid #fff;
 }
 #contact .btn-custom:hover {
   color: #1f386e;
-  background: #fff;
+  background: #E8F6D9;
 }
 label {
   font-size: 12px;
@@ -511,7 +513,7 @@ label {
   color: #444;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -571,21 +573,6 @@ label {
 #contact .social i.fa:hover {
   color: #608dfd;
   background: #fff;
-}
-/* Footer Section*/
-#footer {
-  background: #f6f6f6;
-  padding: 30px 0;
-}
-#footer p {
-  color: #888;
-  font-size: 14px;
-}
-#footer a {
-  color: #608dfd;
-}
-#footer a:hover {
-  border-bottom: 2px solid #608dfd;
 }
 
 @media (max-width: 570px) {
