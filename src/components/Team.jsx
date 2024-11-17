@@ -13,6 +13,9 @@ export const Team = (props) => {
       <div id="team" className="text-center">
       <div className="container">
           <h2>My Team</h2>
+          <p>
+          Meet our team! We are a group of dedicated individuals with expertise in our respective fields, working together to deliver the best results for our clients. Each member has a portfolio that you can access by clicking on their image, allowing you to explore their work and skills.
+          </p>
         <div className="card-grid">
           {props.data
             ? props.data.map((d, i) => (

@@ -1,98 +1,67 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import React from "react";
 import '../styles/footer.css'
+import $ from "jquery";
+import swal from "sweetalert";
 
-const initialState = {
-  name: "",
-  email: "",
-  message: "",
-};
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState);
+  useEffect(() => {
+    const name = document.querySelector("#name");
+    const emailAdress = document.querySelector("#email");
+    const text = document.querySelector("#textArea");
+    const emailPattern = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setState((prevState) => ({ ...prevState, [name]: value }));
-  };
-  const clearState = () => setState({ ...initialState });
-  
-  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log(name, email, message);    
-    emailjs
-      .sendForm("service_thedebuggers", "template_96a718a", e.target, "2bKfoZKQ7Dfh56nat")
-      .then(
-        (result) => {
-          console.log(result.text);
-          clearState();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-  };
+    const handleClick = () => {
+      if (name.value === "" || /\d/.test(name.value)) {
+        swal("Error !", "Please enter a valid name !", "error");
+        return;
+      } else if (emailAdress.value === "" || !emailPattern.test(emailAdress.value)) {
+        swal("Error !", "Please enter a valid email !", "error");
+        return;
+      } else if (text.value === "") {
+        swal("Error !", "Please enter a valid message !", "error");
+        return;
+      } else {
+        setTimeout(() => {
+          $("#lnch").addClass("launching").text("Sending");
+          $("#lnch_btn").addClass("launching");
+        }, 0);
+        setTimeout(() => {
+          $("#lnch").addClass("launched").text("SENT");
+          $("#lnch_btn").addClass("launched");
+        }, 1400);
+        setTimeout(() => {
+          document.querySelector('form').submit();
+        }, 2200);
+      }
+    };
+
+    $("#lnch").on("click", handleClick);
+
+    // Cleanup function to remove event listener
+    return () => {
+      $("#lnch").off("click", handleClick);
+    };
+  }, []);
+
   return (
     <div>
       <div id="contact">
         <div className="container">
-          <div className="col-md-8">
-            <div className="row">
-              <div className="section-title">
-                <h2>Get In Touch</h2>
-                <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
-                </p>
+          <div className="col-lg-6 col-md-12 mb-4 mb-md-0 form-comtainer">
+            <div className="form-style-6">
+              <div className="form-header">
+                <h2 className="display">Contact Us</h2>
               </div>
-              <form name="sentMessage" onSubmit={handleSubmit}>
-                <div className="row">
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        className="form-control"
-                        placeholder="Name"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="form-group">
-                      <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        className="form-control"
-                        placeholder="Email"
-                        required
-                        onChange={handleChange}
-                      />
-                      <p className="help-block text-danger"></p>
-                    </div>
-                  </div>
+              <form action="https://formcarry.com/s/Ppn9dGWH5lo" method="POST" acceptCharset="UTF-8">
+                <input id="name" type="text" name="name" placeholder="Nama" required />
+                <input id="email" type="email" name="email" placeholder="Alamat email" required />
+                <textarea id="textArea" name="message" placeholder="Ketikkan Pesan" required></textarea>
+                <div id="main">
+                  <button className="btn-kirim" id="lnch" type="button" value="Send">Submit</button>
+                  <div id="lnch_btn"><i className="fas fa-space-shuttle"></i></div>
                 </div>
-                <div className="form-group">
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control"
-                    rows="4"
-                    placeholder="Message"
-                    required
-                    onChange={handleChange}
-                  ></textarea>
-                  <p className="help-block text-danger"></p>
-                </div>
-                <div id="success"></div>
-                <button type="submit" className="btn btn-custom btn-lg">
-                  Send Message
-                </button>
               </form>
             </div>
           </div>

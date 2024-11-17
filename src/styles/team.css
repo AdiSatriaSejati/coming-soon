@@ -14,7 +14,7 @@
     max-width: var(--width-container);
     width: 100%;
   }
-  
+
   @media(min-width: 540px){
     .card-grid{
       grid-template-columns: repeat(2, 1fr); 
@@ -35,7 +35,7 @@
   .card:before{
     content: '';
     display: block;
-    padding-bottom: 150%;
+    padding-bottom: 110%;
     width: 100%;
   }
   

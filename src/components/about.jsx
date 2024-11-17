@@ -7,7 +7,7 @@ export const About = (props) => {
         <div className="row">
           <div className="col-xs-12 col-md-6">
             {" "}
-            <img src="img/about.png" className="img-responsive" alt="" />{" "}
+            <img src="https://ik.imagekit.io/thedebuggers/about.png?updatedAt=1731850467281" className="img-responsive" alt="" />{" "}
           </div>
           <div className="col-xs-12 col-md-6">
             <div className="about-text">

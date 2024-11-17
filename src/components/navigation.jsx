@@ -18,7 +18,7 @@ export const Navigation = (props) => {
             <span className="icon-bar"></span>{" "}
           </button>
           <a className="navbar-brand page-scroll" href="#page-top">
-            <img src="img/logo.png" alt="The Debuggers Logo" />
+            <img src="https://ik.imagekit.io/thedebuggers/logo.png?updatedAt=1731850467567" alt="The Debuggers Logo" />
           </a>{" "}
         </div>
 

@@ -18,48 +18,48 @@
   "Gallery": [
     {
       "title": "Movie Landing Page",
-      "largeImage": "https://www.sketchappsources.com/resources/source-image/movie-landing-page-in_kam.png",
-      "smallImage": "https://www.sketchappsources.com/resources/source-image/movie-landing-page-in_kam.png"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/1.png?updatedAt=1731850150413",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/1.png?updatedAt=1731850150413"
     },
     {
       "title": "Smart Home Landing Page",
-      "largeImage": "https://www.sketchappsources.com/resources/source-image/siphome-landing-page-agensip.png",
-      "smallImage": "https://www.sketchappsources.com/resources/source-image/siphome-landing-page-agensip.png"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/2.png?updatedAt=1731850149968",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/2.png?updatedAt=1731850149968"
     },
     {
       "title": "Simple Dashboard in Light & Dark",
-      "largeImage": "https://www.sketchappsources.com/resources/source-image/recreate-vivid-dashboard.png",
-      "smallImage": "https://www.sketchappsources.com/resources/source-image/recreate-vivid-dashboard.png"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/3.png?updatedAt=1731850150145",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/3.png?updatedAt=1731850150145"
     },
     {
       "title": "Everest Sales Dashboard",
-      "largeImage": "https://www.sketchappsources.com/resources/source-image/everest-sales-dashboard-swati-soni.png",
-      "smallImage": "https://www.sketchappsources.com/resources/source-image/everest-sales-dashboard-swati-soni.png"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/4.png?updatedAt=1731850150152",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/4.png?updatedAt=1731850150152"
     },
     {
       "title": "E-commerce UI Kit",
-      "largeImage": "https://www.sketchappsources.com/resources/source-image/ecommerce-ui-kit-vosidiy.png",
-      "smallImage": "https://www.sketchappsources.com/resources/source-image/ecommerce-ui-kit-vosidiy.png"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/5.png?updatedAt=1731850149874",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/5.png?updatedAt=1731850149874"
     },
     {
       "title": "E-commerce User Dashboard",
-      "largeImage": "https://www.sketchappsources.com/resources/source-image/e-comerce-user-dashboard-crevatif.png",
-      "smallImage": "https://www.sketchappsources.com/resources/source-image/e-comerce-user-dashboard-crevatif.png"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/6.png?updatedAt=1731850150306",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/6.png?updatedAt=1731850150306"
     },
     {
       "title": "Fitness Mobile App",
-      "largeImage": "https://cdn.dribbble.com/userupload/9378438/file/original-fac83bb9cdc522cec63379201b4669fa.png?resize=752x564",
-      "smallImage": "https://cdn.dribbble.com/userupload/9378438/file/original-fac83bb9cdc522cec63379201b4669fa.png?resize=752x564"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/7.png?updatedAt=1731850150026",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/7.png?updatedAt=1731850150026"
     },
     {
       "title": "Finance Mobile App",
-      "largeImage": "https://cdn.dribbble.com/userupload/2590119/file/original-855c88a91095d9d4e8e1320893508fdb.png?resize=1024x768",
-      "smallImage": "https://cdn.dribbble.com/userupload/2590119/file/original-855c88a91095d9d4e8e1320893508fdb.png?resize=1024x768"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/8.png?updatedAt=1731850165049",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/8.png?updatedAt=1731850165049"
     },
     {
       "title": "Apps Dashboard Admin",
-      "largeImage": "https://camo.githubusercontent.com/9e156087c0eac7f32987e14c8e752b3052d307206890ab9a6c924ceb65b9f64e/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f31343530312f73637265656e73686f74732f343834303432372f707265766965772e706e67",
-      "smallImage": "https://camo.githubusercontent.com/9e156087c0eac7f32987e14c8e752b3052d307206890ab9a6c924ceb65b9f64e/68747470733a2f2f63646e2e6472696262626c652e636f6d2f75736572732f31343530312f73637265656e73686f74732f343834303432372f707265766965772e706e67"
+      "largeImage": "https://ik.imagekit.io/thedebuggers/9.png?updatedAt=1731850165121",
+      "smallImage": "https://ik.imagekit.io/thedebuggers/9.png?updatedAt=1731850165121"
     }
   ],
   "Services": [
@@ -89,7 +89,7 @@
       "name": "ARYA DILLAH",
       "category": "UI & UX Designer",
       "link":"https://aryadillah.vercel.app/",
-      "img": "img/team/arya.jpg"
+      "img": "https://ik.imagekit.io/thedebuggers/arya.jpg?updatedAt=1731850479565"
     },
     {
       "name": "ADI SATRIA SEJATI",
@@ -100,12 +100,12 @@
     {
       "name": "FEBRIAN SITORUS",
       "category": "Front-End Developer",
-      "img": "img/team/febri.jpg"
+      "img": "https://ik.imagekit.io/thedebuggers/febri.jpg?updatedAt=1731850479174"
     },
     {
       "name": "M. TAUFIQ RENDRADI",
       "category": "Back-End Developer",
-      "img": "img/team/taufiq.jpg"
+      "img": "https://ik.imagekit.io/thedebuggers/taufiq.jpg?updatedAt=1731850481503"
     }
   ],
   "Contact": {
