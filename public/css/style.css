@@ -515,7 +515,7 @@ form {
 }
 .form-style-6 {
   font: 95% Arial, Helvetica, sans-serif;
-  max-width: 400px;
+  max-width: 100%;
   margin: 10px auto;
   padding: 16px;
   border-radius: 2px;
@@ -608,14 +608,11 @@ form {
 }
 #main {
   position: relative;
-  margin-left: 4rem;
-  width: 325px;
-}
-
-.btn-kirim {
-  width: 30rem;
-  height: 3.5rem;
-  outline: none;
+  margin-left: 5rem;
+  margin-left: auto;
+    margin-right: auto;
+  max-width: 100%;
+  width: 75%;
 }
 
 #lnch :hover {
@@ -625,8 +622,11 @@ form {
 }
 
 #lnch {
+  width: 100%;
   font-size: 25px;
+  height: 3.5rem;
   color: #fff;
+  outline: none;
   line-height: 1;
   text-align: center;
   border-radius: 50px;
@@ -642,7 +642,7 @@ form {
   font-size: 22px;
   line-height: 1;
   color: #fff;
-  padding: 7.5px 40px;
+  padding: 7.5px 30px;
   cursor: pointer;
   transition: 0.3s ease transform;
 }
@@ -743,7 +743,7 @@ form {
 @media (max-width: 570px) {
 
   #contact .form-comtainer{
-    top: 75px;
+    top: 85px;
   }
   #about img {
     margin: 50px 0;

@@ -35,9 +35,33 @@
     padding-top: 350px;
     bottom: 60vw;
   }
+  #main {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+
+  }
+  #lnch_btn {
+    padding: 10px 15px;
+  }
+  #lnch_btn i {
+    font-size: 1.5rem;
+  }
+  #lnch {
+    max-width: 100%;
+    width:100%;
+    font-size: 1.5rem;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {/* untuk tab / ipad */
+  #lnch {
+    max-width: 100%;
+    width: 100vw;
+  }
+  #lnch_btn {
+    padding: 6.5px 20px;
+  }
   #footer {
     margin-top: 40px;
   }
