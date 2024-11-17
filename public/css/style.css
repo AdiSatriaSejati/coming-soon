@@ -482,6 +482,7 @@ header .first {
   color: #000;
 }
 /* Contact Section */
+
 #contact h2 {
   position: relative;
   margin-bottom: 15px;
@@ -740,6 +741,10 @@ form {
 }
 
 @media (max-width: 570px) {
+
+  #contact .form-comtainer{
+    top: 75px;
+  }
   #about img {
     margin: 50px 0;
   }

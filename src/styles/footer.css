@@ -51,12 +51,15 @@
   }
 }
 @media (max-width: 768px) {
+  #footer {
+    margin-top: 40px;
+  }
   .waves {
     height: 40px;
     min-height: 40px;
   }
   .content {
-    height: 30vh;
+    height: 15vh;
   }
   h1 {
     font-size: 24px;

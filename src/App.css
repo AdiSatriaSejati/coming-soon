@@ -38,6 +38,9 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {/* untuk tab / ipad */
+  #footer {
+    margin-top: 40px;
+  }
   header .intro-text {
     padding-top: 350px;
   }
