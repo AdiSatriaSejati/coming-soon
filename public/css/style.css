@@ -610,7 +610,7 @@ form {
   position: relative;
   margin-left: 5rem;
   margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
   max-width: 100%;
   width: 75%;
 }
@@ -637,7 +637,7 @@ form {
 
 #lnch_btn {
   position: absolute;
-  top: 0px;
+  top: 0;
   right: 0;
   font-size: 22px;
   line-height: 1;
@@ -704,7 +704,8 @@ form {
   }
 }
 .contact-info {
-  top: 50px;
+  top: 200px;
+  bottom: auto;
 }
 #contact .contact-item span {
   color: rgba(0, 0, 0, 1);
@@ -738,6 +739,10 @@ form {
 #contact .social i.fa:hover {
   color: #608;
   background: #fff;
+}
+#contact .form-comtainer{
+  top: 85px;
+  z-index: 100;
 }
 
 @media (max-width: 570px) {
