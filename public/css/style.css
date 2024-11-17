@@ -158,7 +158,7 @@ hr {
 .btn-custom {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
-  color: #fff;
+  color: #000;
   background-color: #5ca9fb;
   background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
   padding: 14px 34px;
@@ -448,9 +448,7 @@ header .first {
 }
 /* Contact Section */
 #contact {
-  position: relative;
-  padding: auto;
-  top: 150px;
+  padding: 100px 0 60px;
   color: rgba(0, 0, 0, 0.75);
 }
 #contact .section-title {
@@ -492,11 +490,11 @@ header .first {
 #contact .btn-custom {
   margin: 30px 0;
   background: transparent;
-  border: 2px solid #fff;
+  border: 2px solid #000;
 }
 #contact .btn-custom:hover {
   color: #1f386e;
-  background: #E8F6D9;
+  background: #fff;
 }
 label {
   font-size: 12px;
@@ -513,7 +511,7 @@ label {
   color: #444;
   background-color: #fff;
   background-image: none;
-  border: 1px solid #fff;
+  border: 1px solid #000;
   border-radius: 0;
   -webkit-box-shadow: none;
   box-shadow: none;
