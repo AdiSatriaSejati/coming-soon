@@ -1,117 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="shortcut icon" href="https://ik.imagekit.io/thedebuggers/favicon.ico?updatedAt=1731850467583" type="image/x-icon" />
   <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-  <link
-    rel="apple-touch-icon"
-    sizes="72x72"
-    href="img/apple-touch-icon-72x72.png"
-  />
-  <link
-    rel="apple-touch-icon"
-    sizes="114x114"
-    href="img/apple-touch-icon-114x114.png"
-  />
+  <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png" />
 
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="fonts/font-awesome/css/font-awesome.css"
-  />
+  <link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link
-    rel="stylesheet"
-    type="text/css"
-    href="css/nivo-lightbox/nivo-lightbox.css"
-  />
+  <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/nivo-lightbox.css" />
   <link rel="stylesheet" type="text/css" href="css/nivo-lightbox/default.css" />
   <link rel="stylesheet" type="text/css" href="css/backgroundAnimation.css" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Lato:400,700"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900" rel="stylesheet" />
   <script src='https://kit.fontawesome.com/aedf1b7c79.js'></script>
   <title>The Debuggers</title>
   <meta name="description" content="" />
 </head>
-<canvas id="neuro"></canvas>
-
-  <script type="x-shader/x-fragment" id="vertShader">
-    precision mediump float;
-    varying vec2 vUv;
-    attribute vec2 a_position;
-    void main() {
-      vUv = .5 * (a_position + 1.);
-      gl_Position = vec4(a_position, 0.0, 1.0);
-    }
-  </script>
-
-  <script type="x-shader/x-fragment" id="fragShader">
-    precision mediump float;
-    varying vec2 vUv;
-    uniform float u_time;
-    uniform float u_ratio;
-    uniform vec2 u_pointer_position;
-    uniform float u_scroll_progress;
-
-    vec2 rotate(vec2 uv, float th) {
-        return mat2(cos(th), sin(th), -sin(th), cos(th)) * uv;
-    }
-
-    float neuro_shape(vec2 uv, float t, float p) {
-        vec2 sine_acc = vec2(0.);
-        vec2 res = vec2(0.);
-        float scale = 8.;
-
-        for (int j = 0; j < 15; j++) {
-            uv = rotate(uv, 1.);
-            sine_acc = rotate(sine_acc, 1.);
-            vec2 layer = uv * scale + float(j) + sine_acc - t;
-            sine_acc += sin(layer);
-            res += (.5 + .5 * cos(layer)) / scale;
-            scale *= (1.2 - .07 * p);
-        }
-        return res.x + res.y;
-    }
-
-    void main() {
-        vec2 uv = .5 * vUv;
-        uv.x *= u_ratio;
-
-        vec2 pointer = vUv - u_pointer_position;
-        pointer.x *= u_ratio;
-        float p = clamp(length(pointer), 0., 1.);
-        p = .5 * pow(1. - p, 2.);
-
-        float t = .001 * u_time;
-        vec3 color1 = vec3(139.0/255.0, 81.0/255.0, 193.0/255.0); // #8B51C1
-        vec3 color2 = vec3(51.0/255.0, 181.0/255.0, 204.0/255.0); // #33b5cc
-
-        float noise = neuro_shape(uv, t, p);
-
-        noise = 1.2 * pow(noise, 3.);
-        noise += pow(noise, 10.);
-        noise = max(.0, noise - .5);
-        noise *= (1. - length(vUv - .5));
-
-        // Interpolasi antara dua warna
-        vec3 color = mix(color1, color2, uv.y);
-
-        color = color * noise;
-
-        gl_FragColor = vec4(color, noise);
-    }
-  </script>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <canvas id="neuro"></canvas>
 
   <script type="x-shader/x-fragment" id="vertShader">
@@ -181,8 +91,8 @@
     }
   </script>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
   <div id="root"></div>
   <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
 </body>
+</html>
