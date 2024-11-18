@@ -295,7 +295,6 @@ header .first {
 }
 #about img {
   width: 520px;
-  margin-top: 10px;
 }
 #about p {
   line-height: 24px;
@@ -743,20 +742,4 @@ form {
 #contact .form-comtainer{
   top: 85px;
   z-index: 100;
-}
-
-@media (max-width: 570px) {
-
-  #contact .form-comtainer{
-    top: 85px;
-  }
-  #about img {
-    margin: 50px 0;
-  }
-  #menu img {
-    width: 50vw;
-    height: 10vw;
-    margin:0;
-    bottom: 8.5px;
-  }
 }
